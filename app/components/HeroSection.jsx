@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#974063] to-[#FF9677]">
-              Hello, I'm{" "}
+              Hello, Im{" "}
             </span>
             <br></br>
             <TypeAnimation
@@ -33,8 +33,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            "Greatness is not meant for a few chosen people, it's meant for
-            those who persistently pursue their dreams everyday."
+            Greatness is not meant for a few chosen people, its meant for
+            those who persistently pursue their dreams everyday.
           </p>
           <div>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-[#974063] to-[#FF9677] hover:bg-slate-800 text-white mt-3">
