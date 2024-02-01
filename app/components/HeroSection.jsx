@@ -37,8 +37,13 @@ const HeroSection = () => {
             those who persistently pursue their dreams everyday."
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-[#974063] to-[#FF9677] hover:bg-slate-200 text-white">
-              Hire Me
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-[#974063] to-[#FF9677] hover:bg-slate-800 text-white mt-3">
+              <a
+                href="mailto:cyb3rjutsu@gmail.com?subject=Inquiry%20about%20Job%20Opportunity"
+                className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
+              >
+                Send Email
+              </a>
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-[#974063] to-[#FF9677] hover:bg-slate-800 text-white mt-3">
               <a
