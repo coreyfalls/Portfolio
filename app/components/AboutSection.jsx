@@ -66,7 +66,7 @@ const AboutSection = () => {
             organization, problem-solving, and teamwork, I bring a unique blend
             of skills to the table. I am excited about the ongoing journey from
             developer to cybersecurity enthusiast, with a clear goal of becoming
-            a Cloud Security Engineer. Let's connect and explore how my skills
+            a Cloud Security Engineer. Lets connect and explore how my skills
             and experiences can contribute to the success of your team!
           </p>
           <div className="flex flex-row justify-start mt-8">
