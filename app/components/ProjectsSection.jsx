@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Server Manager/AD",
-    description: "HomeLab that allows knowlwdge of a Active Directory server with 20 employees that can log in using their own credentials on various workstations.",
+    description: "HomeLab that allows knowledge of a Active Directory server with 20 employees that can log in using their own credentials on various workstations.",
     image: "/image/projects/dark-cloud.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/coreyfalls/ServerManager-AD",
