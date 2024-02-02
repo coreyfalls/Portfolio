@@ -8,57 +8,57 @@ const projectsData = [
   {
     id: 1,
     title: "Server Manager/AD",
-    description: "Active Directory server with 20 employees that can log in through their on creditials on various workstations.",
-    image: "/images/dark-cloud.png",
+    description: "HomeLab that allows knowlwdge of a Active Directory server with 20 employees that can log in using their own credentials on various workstations.",
+    image: "/image/projects/dark-cloud.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/coreyfalls/ServerManager-AD",
+    previewUrl: "https://github.com/coreyfalls/ServerManager-AD",
   },
   {
     id: 2,
     title: "SIEM",
-    description: "Project 2 description",
-    image: "/images/dark-cloud.png",
+    description: "HomeLab that goes over the uses of a Security Information and Event Manager",
+    image: "/image/projects/pce.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/coreyfalls/siem",
+    previewUrl: "https://github.com/coreyfalls/siem",
   },
   {
     id: 3,
     title: "Cloud Control",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    description: "HomeLab that focuses on cloud security and best practices.",
+    image: "/image/projects/cloud-sec.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/coreyfalls/Cloud-control",
+    previewUrl: "https://github.com/coreyfalls/Cloud-control",
   },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 4,
+  //   title: "Food Ordering Application",
+  //   description: "Project 4 description",
+  //   image: "/images/projects/4.png",
+  //   tag: ["All", "Mobile"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 5,
+  //   title: "React Firebase Template",
+  //   description: "Authentication and CRUD operations",
+  //   image: "/images/projects/5.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Full-stack Roadmap",
+  //   description: "Project 5 description",
+  //   image: "/images/projects/6.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -84,6 +84,23 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        <ProjectTag
+          onClick={handleTagChange}
+          name="All"
+          isSelected={tag === "All"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Web"
+          isSelected={tag === "Web"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Mobile"
+          isSelected={tag === "Mobile"}
+        />
+      </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li

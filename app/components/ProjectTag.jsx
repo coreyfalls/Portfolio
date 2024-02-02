@@ -1,17 +1,26 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-const ProjectTag = ({ name, onClick, isSelected }) => {
-  const buttonStyles = isSelected
-    ? "text-white border-primary-500"
-    : "text-[#ADB7BE] border-slate-600 hover:border-white";
+const variants = {
+  default: { width: 0 },
+  active: { width: "calc(100% - 0.75rem)" },
+};
+
+const TabButton = ({ active, selectTab, children }) => {
+  const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
+
   return (
-    <button
-      className={`${buttonStyles} rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
-      onClick={() => onClick(name)}
-    >
-      {name}
+    <button onClick={selectTab}>
+      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+        {children}
+      </p>
+      <motion.div
+        animate={active ? "active" : "default"}
+        variants={variants}
+        className="h-1 bg-primary-500 mt-2 mr-3"
+      ></motion.div>
     </button>
   );
 };
 
-export default ProjectTag;
+export default TabButton;
