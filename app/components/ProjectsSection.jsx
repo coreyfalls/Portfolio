@@ -12,7 +12,7 @@ const projectsData = [
     image: "/image/projects/dark-cloud.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/coreyfalls/ServerManager-AD",
-    previewUrl: "https://github.com/coreyfalls/ServerManager-AD",
+    previewUrl: "https://github.com/coreyfalls/ServerManager-AD/blob/main/Screenshot%20(9).png",
   },
   {
     id: 2,
