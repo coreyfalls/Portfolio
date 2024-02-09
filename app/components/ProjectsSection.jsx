@@ -21,7 +21,7 @@ const projectsData = [
     image: "/image/projects/pce.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/coreyfalls/siem",
-    previewUrl: "https://github.com/coreyfalls/siem",
+    previewUrl: "https://github.com/coreyfalls/siem/blob/main/siem.png",
   },
   {
     id: 3,
